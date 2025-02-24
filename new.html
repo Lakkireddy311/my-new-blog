@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://assets.adobedtm.com/236ca7d75265/fb04c013f182/launch-b7ddb7c7c63b-development.min.js" async></script>
+    <script src ="at.js"></script>
+    <script>
+        adobe.target.getOffer({
+            "mbox": "target-global-mbox",
+            "success": function(offer) {
+            adobe.target.applyOffer({
+                "mbox": "target-global-mbox",
+                "offer": offer
+            });
+            },
+            "error": function(status, error) {
+            console.log('Error:', status, error);
+            }
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple WEB</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; margin: 0; padding: 0;">
+   
+    <header style="background-color: #181918; color: white; padding: 20px 20px; display: flex; justify-content: space-between; ">
+        <nav style="margin: 20px;">
+            <a href="contact1.html" style="background-color: #2d0c75; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Contact Us</a>
+        </nav>
+        <h1>WEBSITE OF GOOGLE ANALYTICS</h1>
+    </header>
+ 
+    <main style="padding: 20px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tordSZdd8R4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <section>
+            <h2>Other styling stuff</h2>
+            <p style="margin-bottom: 20px;">This is a padding paragraph with some inline and background styling.</p>
+            <button style="background-color: #008CBA; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="showAlert()" id="button_id">Click Me!</button>
+        </section>
+        
+        <!-- Download Button -->
+        <a href="dummyfile.txt" download="dummyfile.txt" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">Download Dummy File</a>
+        
+        <!-- New Outbound Link -->
+        <div class="center" style="text-align:center; margin: 20px 0;">
+            <a href="https://www.w3schools.com/howto/howto_google_analytics.asp" target="_blank" style="color: #4CAF50; text-decoration: none; display: inline-block; margin-top: 20px;">
+                Visit Tutorial Site
+            </a>
+        </div>
+ 
+    
+    
+    </main>
+ 
+    <footer style="background-color: #4c4caf; color: rgb(189, 181, 181); padding: 10px 0;">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+ 
+    <script>
+        function showAlert() {
+            alert('Button clicked!');
+        }
+    </script>
+</body>
+</html>
